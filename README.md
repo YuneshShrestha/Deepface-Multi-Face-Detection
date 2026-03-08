@@ -269,6 +269,7 @@ color → (B, G, R) color
 thickness → Text thickness
 
 Minimal Example
+```
 import cv2
 
 # Create a blank image
@@ -279,17 +280,7 @@ cv2.putText(img, "Hello World", (50, 50),
             cv2.FONT_HERSHEY_SIMPLEX,
             1, (0, 255, 0), 2)
 
-# Show image
-cv2.imshow("Image", img)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-Example (Above a Face)
-x = 100
-y = 120
-
-cv2.putText(img, "Happy", (x, y-10),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            0.8, (0,255,0), 2)
+```
 
 This will display:
 
